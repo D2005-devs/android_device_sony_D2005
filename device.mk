@@ -56,7 +56,7 @@ PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := hdpi
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 800
+TARGET_SCREEN_HEIGHT := 854
 TARGET_SCREEN_WIDTH := 480
 
 $(call inherit-product, frameworks/native/build/phone-hdpi-dalvik-heap.mk)
@@ -142,11 +142,7 @@ PRODUCT_PACKAGES += \
     keystore.msm8610
 
 # Prebuilt Kernel
-BUILD_KERNEL := false
 TARGET_PREBUILT_KERNEL := device/sony/D2005/kernel
-
-PRODUCT_COPY_FILES := \
-    $(TARGET_PREBUILT_KERNEL):kernel
 
 # Lights
 PRODUCT_PACKAGES += \

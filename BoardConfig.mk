@@ -45,8 +45,8 @@ BOARD_KERNEL_BASE := 0x00008000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01E00000 --dt kernel.elf.3
-# TARGET_KERNEL_SOURCE := kernel/sony/msm8610
-# TARGET_KERNEL_CONFIG := msm8610_build_defconfig
+TARGET_KERNEL_SOURCE := kernel/sony/msm8610
+TARGET_KERNEL_CONFIG := msm8610_defconfig
 
 #WLAN_MODULES:
 #	mkdir -p $(KERNEL_MODULES_OUT)/pronto
