@@ -61,6 +61,11 @@ TARGET_SCREEN_WIDTH := 480
 
 $(call inherit-product, frameworks/native/build/phone-hdpi-dalvik-heap.mk)
 
+# ADB
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.secure=0 \
+    ro.adb.secure=0
+
 # Audio
 PRODUCT_PACKAGES += \
     audiod \
