@@ -38,6 +38,10 @@ TARGET_USE_QCOM_BIONIC_OPTIMIZATION := true
 TARGET_BOOTLOADER_BOARD_NAME := MSM8610
 TARGET_NO_BOOTLOADER := true
 
+
+# Init
+# TARGET_INIT_VENDOR_LIB := libinit_D2005
+
 # Kernel
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom user_debug=31 maxcpus=2 msm_rtb.filter=0x3F ehci-hcd.park=3 msm_rtb.enable=0 lpj=192598 dwc3.maximum_speed=high dwc3_msm.prop_chg_detect=Y androidboot.selinux=permissive selinux=0
 BOARD_CUSTOM_BOOTIMG_MK := $(LOCAL_PATH)/custombootimg.mk
@@ -89,7 +93,7 @@ TARGET_USES_ION := true
 USE_OPENGL_RENDERER := true
 
 # Encryption
-TARGET_HW_DISK_ENCRYPTION := true
+TARGET_HW_DISK_ENCRYPTION := false
 
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
